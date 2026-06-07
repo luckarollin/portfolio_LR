@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucka ROLLIN — Certifications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<header class="hd">
+  <div class="hd-i">
+    <a href="../index.html" class="logo">
+      <span class="logo-n">Lucka ROLLIN</span>
+      <span class="logo-s">BTS SIO — option SISR</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="hnav">
+      <a href="../index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="experiences.html">Expériences</a>
+      <a href="projets.html">Projets</a>
+      <a href="veille.html">Veille</a>
+      <a href="certifications.html" class="on">Certifications</a>
+      <a href="contact.html">Contact</a>
+      <a href="stage_radiall.html">Stage</a>
+    </nav>
+  </div>
+</header>
+
+<div id="app">
+
+<div class="page-header">
+  <p class="breadcrumb"><a href="../index.html">Accueil</a> <span class="sep">/</span> Certifications</p>
+  <h1 class="page-title">Certifications</h1>
+  <p class="page-sub">Formations et certifications obtenues dans le cadre du BTS SIO.</p>
+</div>
+
+<div class="cert-grid">
+
+  <!-- OpenClassrooms — Sécurisez votre réseau -->
+  <div class="cert-card">
+    <div class="cert-logo oc">OC</div>
+    <div class="cert-info">
+      <h3>Sécurisez votre réseau grâce aux VPN et Firewall</h3>
+      <p class="cert-platform">OpenClassrooms — Cybersécurité</p>
+      <p>Configuration et sécurisation de réseaux d'entreprise via des solutions VPN et pare-feu. Notions de filtrage, tunnels chiffrés et politiques de sécurité réseau.</p>
+      <span class="cert-status termine">✅ Terminé</span>
+    </div>
+  </div>
+
+  <!-- OpenClassrooms — Windows Server -->
+  <div class="cert-card">
+    <div class="cert-logo oc">OC</div>
+    <div class="cert-info">
+      <h3>Prenez en main Windows Server</h3>
+      <p class="cert-platform">OpenClassrooms — Systèmes &amp; Réseaux</p>
+      <p>Administration d'un serveur Windows Server : Active Directory, gestion des utilisateurs, DHCP, politiques de groupe (GPO) et supervision du parc.</p>
+      <span class="cert-status termine">✅ Terminé — janvier 2026</span>
+    </div>
+  </div>
+
+  <!-- OpenClassrooms — Linux -->
+  <div class="cert-card">
+    <div class="cert-logo oc">OC</div>
+    <div class="cert-info">
+      <h3>Initiez-vous à Linux</h3>
+      <p class="cert-platform">OpenClassrooms — Systèmes &amp; Réseaux</p>
+      <p>Prise en main de l'environnement Linux : commandes de base, gestion des fichiers et permissions, navigation en ligne de commande et administration système.</p>
+      <span class="cert-status termine">✅ Terminé — novembre 2025</span>
+    </div>
+  </div>
+
+  <!-- MOOC ANSSI -->
+  <div class="cert-card">
+    <div class="cert-logo anssi">ANSSI</div>
+    <div class="cert-info">
+      <h3>MOOC de l'ANSSI</h3>
+      <p class="cert-platform">Agence Nationale de la Sécurité des Systèmes d'Information</p>
+      <p>Formation officielle aux fondamentaux de la cybersécurité : sensibilisation aux menaces, bonnes pratiques de sécurité, protection des systèmes d'information et cadre réglementaire français.</p>
+      <span class="cert-status termine">✅ Terminé</span>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<footer class="ft">
+  <p>© <span id="year"></span> Lucka ROLLIN — BTS SIO — option SISR &nbsp;·&nbsp; <a href="mailto:lucka.rollin@gmail.com">lucka.rollin@gmail.com</a></p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('.hnav a').forEach(a => a.addEventListener('click', () => document.querySelector('.hnav').classList.remove('open')));
+</script>
+</body>
+</html>
 
