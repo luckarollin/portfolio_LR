@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio de Lucka ROLLIN — BTS SIO — option SISR" />
+  <title>Lucka ROLLIN — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="hd">
+  <div class="hd-i">
+    <a href="index.html" class="logo">
+      <span class="logo-n">Lucka ROLLIN</span>
+      <span class="logo-s">BTS SIO — option SISR</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="hnav">
+      <a href="index.html" class="on">Accueil</a>
+      <a href="vues/competences.html">Compétences</a>
+      <a href="vues/experiences.html">Expériences</a>
+      <a href="vues/projets.html">Projets</a>
+      <a href="vues/veille.html">Veille</a>
+      <a href="vues/certifications.html">Certifications</a>
+      <a href="vues/stage_radiall.html">Stage RADIALL</a>
+      <a href="vues/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div id="app">
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero-tag" id="salutation"></p>
+  <h1 class="hero-name">Je suis <em>Lucka ROLLIN</em></h1>
+  <p class="hero-form">BTS SIO — option SISR · Lycée Paul Louis Courrier, Tours</p>
+  <p class="hero-desc">Passionné par les infrastructures réseau et la sécurité des systèmes, je cherche à me spécialiser dans l'administration et la protection des environnements informatiques.</p>
+  <div class="hero-btns">
+    <a class="btn" href="vues/contact.html">Me contacter</a>
+    <a class="btn g" href="CV-Vierge.pdf" download>Télécharger le CV</a>
+  </div>
+  <ul class="pills">
+    <li>Autonomie</li><li>Curiosité</li><li>Rigueur</li><li>Permis B</li>
+  </ul>
+</div>
+
+<!-- PRÉSENTATION BTS SIO -->
+<section class="bts-section">
+  <div class="bts-card">
+    <div class="bts-left">
+      <span class="bts-badge">BTS SIO</span>
+      <h2>Services Informatiques<br/><em>aux Organisations</em></h2>
+      <p>Le BTS SIO forme des techniciens capables de gérer, maintenir et sécuriser les systèmes d'information des entreprises. Il se divise en deux options complémentaires.</p>
+    </div>
+    <div class="bts-right">
+      <div class="option-card active">
+        <span class="opt-label">Mon option</span>
+        <h3>SISR</h3>
+        <p>Solutions d'Infrastructure, Systèmes et Réseaux</p>
+        <ul class="opt-list">
+          <li>Administration réseaux & serveurs</li>
+          <li>Sécurité des infrastructures</li>
+          <li>Virtualisation & cloud</li>
+          <li>Gestion de parc informatique</li>
+        </ul>
+      </div>
+      <div class="option-card muted">
+        <h3>SLAM</h3>
+        <p>Solutions Logicielles et Applications Métiers</p>
+        <ul class="opt-list">
+          <li>Développement d'applications</li>
+          <li>Bases de données</li>
+          <li>Intégration web</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 CARTES CLIQUABLES -->
+<div class="home-grid">
+
+  <a class="home-card" href="vues/competences.html">
+    <div class="home-card-ico">✅</div>
+    <h3>Compétences</h3>
+    <p>Windows Server, VirtualBox, GLPI, Cisco, Git…</p>
+    <div class="tags">
+      <span class="tag">8 compétences</span>
+      <span class="tag">SISR</span>
+    </div>
+  </a>
+
+  <a class="home-card" href="vues/experiences.html">
+    <div class="home-card-ico">💼</div>
+    <h3>Expériences</h3>
+    <p>Missions professionnelles, bénévolat et formations.</p>
+    <div class="tags">
+      <span class="tag">3 expériences</span>
+      <span class="tag">3 formations</span>
+    </div>
+  </a>
+
+  <a class="home-card" href="vues/projets.html">
+    <div class="home-card-ico">📁</div>
+    <h3>Projets</h3>
+    <p>Réalisations techniques documentées avec preuves.</p>
+    <div class="tags">
+      <span class="tag">3 projets</span>
+    </div>
+  </a>
+
+  <a class="home-card" href="vues/veille.html">
+    <div class="home-card-ico">🔭</div>
+    <h3>Veille technologique</h3>
+    <p>Suivi des évolutions du secteur informatique.</p>
+    <div class="tags">
+      <span class="tag">Cybersécurité</span>
+    </div>
+  </a>
+
+  <a class="home-card" href="vues/certifications.html">
+    <div class="home-card-ico">🏅</div>
+    <h3>Certifications</h3>
+    <p>Formations et certifications obtenues.</p>
+    <div class="tags">
+      <span class="tag">Cisco</span>
+      <span class="tag">OpenClassrooms</span>
+    </div>
+  </a>
+
+  <a class="home-card" href="vues/contact.html">
+    <div class="home-card-ico">✉️</div>
+    <h3>Contact</h3>
+    <p>Disponible pour une alternance — réponse rapide.</p>
+    <div class="tags">
+      <span class="tag">lucka.rollin@gmail.com</span>
+    </div>
+  </a>
+
+</div>
+
+</div>
+
+<footer class="ft">
+  <p>© <span id="year"></span> Lucka ROLLIN — BTS SIO — option SISR &nbsp;·&nbsp; <a href="mailto:lucka.rollin@gmail.com">lucka.rollin@gmail.com</a></p>
+</footer>
+
+<script>
+  const h = new Date().getHours();
+  const hh = String(h).padStart(2,'0');
+  const mm = String(new Date().getMinutes()).padStart(2,'0');
+  let sal;
+  if (h >= 6 && h < 12)       sal = 'Bonjour ☀️';
+  else if (h >= 12 && h < 18) sal = 'Bon après-midi 🌤️';
+  else if (h >= 18 && h < 22) sal = 'Bonsoir 🌙';
+  else                          sal = 'Bonne nuit ⭐';
+  document.getElementById('salutation').textContent = sal + ' — il est ' + hh + 'h' + mm;
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('.hnav a').forEach(a => a.addEventListener('click', () => document.querySelector('.hnav').classList.remove('open')));
+</script>
+</body>
+</html>

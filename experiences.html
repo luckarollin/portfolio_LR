@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucka ROLLIN — Expériences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<header class="hd">
+  <div class="hd-i">
+    <a href="../index.html" class="logo">
+      <span class="logo-n">Lucka ROLLIN</span>
+      <span class="logo-s">BTS SIO — option SISR</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="hnav">
+      <a href="../index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="experiences.html" class="on">Expériences</a>
+      <a href="projets.html">Projets</a>
+      <a href="veille.html">Veille</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+      <a href="stage_radiall.html">Stage</a>
+    </nav>
+  </div>
+</header>
+
+<div id="app">
+
+<div class="page-header">
+  <p class="breadcrumb"><a href="../index.html">Accueil</a> <span class="sep">/</span> Expériences</p>
+  <h1 class="page-title">Expériences</h1>
+</div>
+
+<h2 class="st">Expériences professionnelles</h2>
+<div class="tl">
+  <div class="ti">
+    <div class="ti-dot"></div>
+    <div class="ti-c">
+      <div class="ti-row">
+        <h3>Équipier polyvalent</h3>
+        <span class="time">févr. 2025 – juil. 2025</span>
+      </div>
+      <p class="place">McDonald's, Saint-Cyr-sur-Loire</p>
+      <p>Travail en équipe, gestion des commandes, respect des procédures en environnement exigeant. Développement de la rigueur et de l'adaptabilité.</p>
+      <div class="tags" style="margin-top:8px">
+        <span class="tag">Esprit d'équipe</span>
+        <span class="tag">Rigueur</span>
+        <span class="tag">Gestion du stress</span>
+      </div>
+    </div>
+  </div>
+  <div class="ti">
+    <div class="ti-dot"></div>
+    <div class="ti-c">
+      <div class="ti-row">
+        <h3>Bénévole</h3>
+        <span class="time">févr. 2021</span>
+      </div>
+      <p class="place">Villa Rabelais / IEHCA, Tours</p>
+      <p>Aide à l'organisation des collections, appui à la mise en place de conférences et ateliers culturels.</p>
+      <div class="tags" style="margin-top:8px">
+        <span class="tag">Organisation</span>
+        <span class="tag">Bénévolat</span>
+      </div>
+    </div>
+  </div>
+  <div class="ti">
+    <div class="ti-dot"></div>
+    <div class="ti-c">
+      <div class="ti-row">
+        <h3>Arbitre bénévole</h3>
+        <span class="time">2018 – 2020</span>
+      </div>
+      <p class="place">Club de handball, Saint-Cyr-sur-Loire</p>
+      <p>Arbitrage lors de matchs officiels du club local. Développement de l'autorité, de la concentration et de la prise de décision rapide.</p>
+      <div class="tags" style="margin-top:8px">
+        <span class="tag">Prise de décision</span>
+        <span class="tag">Sport collectif</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="st sec-gap">Formations</h2>
+<ul class="edu-l">
+  <li class="ei">
+    <div>
+      <strong>BTS SIO — Services Informatiques aux Organisations</strong>
+      <span class="mu">Option SISR — Lycée Paul Louis Courrier, Tours</span>
+    </div>
+    <span class="time">depuis 09/2025</span>
+  </li>
+  <li class="ei">
+    <div>
+      <strong>Licence — Sciences de la Vie (1ère année)</strong>
+      <span class="mu">Université de Tours</span>
+    </div>
+    <span class="time">09/2024 – 01/2025</span>
+  </li>
+  <li class="ei">
+    <div>
+      <strong>Baccalauréat général — Spécialités SVT &amp; Mathématiques</strong>
+      <span class="mu">Lycée Choiseul, Tours</span>
+    </div>
+    <span class="time">09/2021 – 06/2024</span>
+  </li>
+</ul>
+
+</div>
+
+<footer class="ft">
+  <p>© <span id="year"></span> Lucka ROLLIN — BTS SIO — option SISR &nbsp;·&nbsp; <a href="mailto:lucka.rollin@gmail.com">lucka.rollin@gmail.com</a></p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('.hnav a').forEach(a => a.addEventListener('click', () => document.querySelector('.hnav').classList.remove('open')));
+</script>
+</body>
+</html>

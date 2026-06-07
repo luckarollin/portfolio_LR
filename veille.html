@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucka ROLLIN — Veille technologique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<header class="hd">
+  <div class="hd-i">
+    <a href="../index.html" class="logo">
+      <span class="logo-n">Lucka ROLLIN</span>
+      <span class="logo-s">BTS SIO — option SISR</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="hnav">
+      <a href="../index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="experiences.html">Expériences</a>
+      <a href="projets.html">Projets</a>
+      <a href="veille.html" class="on">Veille</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+      <a href="stage_radiall.html">Stage</a>
+    </nav>
+  </div>
+</header>
+
+<div id="app">
+
+<div class="page-header">
+  <p class="breadcrumb"><a href="../index.html">Accueil</a> <span class="sep">/</span> Veille technologique</p>
+  <h1 class="page-title">Veille technologique</h1>
+</div>
+
+<!-- SUJET -->
+<div class="veille-hero">
+  <div class="veille-topic">
+    <span class="bts-badge">Sujet de veille</span>
+    <h2>L'Intelligence Artificielle et la Cybersécurité</h2>
+    <p>Suivi des évolutions de l'IA dans les domaines de la sécurité informatique, de la productivité et des infrastructures numériques — impact sur les métiers de l'informatique et les systèmes d'information.</p>
+  </div>
+</div>
+
+<!-- OUTILS DE VEILLE -->
+<h2 class="st">Outils utilisés</h2>
+<div class="tools-grid">
+  <div class="tool-card">
+    <span class="tool-ico">📰</span>
+    <h3>Le Monde Informatique</h3>
+    <p>Source principale — actualités IT, cybersécurité, IA et systèmes d'information.</p>
+  </div>
+  <div class="tool-card">
+    <span class="tool-ico">🔔</span>
+    <h3>Google Alerts</h3>
+    <p>Alertes automatiques sur les mots-clés : cybersécurité, IA, Windows Server, SISR.</p>
+  </div>
+  <div class="tool-card">
+    <span class="tool-ico">📋</span>
+    <h3>Notion</h3>
+    <p>Organisation et archivage personnel des articles collectés avec résumés et étiquettes.</p>
+  </div>
+</div>
+
+<!-- FILTRES -->
+<h2 class="st sec-gap">Articles &amp; sources</h2>
+<p class="section-intro">7 articles analysés — sources vérifiées issues du Monde Informatique.</p>
+
+<div class="veille-filters">
+  <button class="vfilter on" onclick="filterArticles('all', this)">Tous (7)</button>
+  <button class="vfilter" onclick="filterArticles('cybersécurité', this)">Cybersécurité</button>
+  <button class="vfilter" onclick="filterArticles('ia', this)">Intelligence Artificielle</button>
+  <button class="vfilter" onclick="filterArticles('windows', this)">Windows</button>
+</div>
+
+<div class="articles-list" id="articles-list">
+
+  <!-- Article 1 -->
+  <div class="article-card" data-tag="cybersécurité">
+    <div class="article-meta">
+      <span class="article-date">21 août 2025</span>
+      <div class="article-tags">
+        <span class="tag">Cybersécurité</span>
+        <span class="tag">Gestion</span>
+        <span class="tag">Économie</span>
+      </div>
+    </div>
+    <h3>Encore piraté, Auchan alerte sur une fuite de données clients</h3>
+    <p>Auchan a subi un piratage de ses systèmes exposant des données personnelles et bancaires de clients. L'entreprise a réagi en sécurisant ses infrastructures et en alertant les personnes concernées. Cet incident illustre la vulnérabilité des grandes enseignes qui gèrent des volumes massifs de données personnelles.</p>
+    <div class="article-impact">
+      <span class="impact-label">💡 Impact SISR</span>
+      <p>Rappel de l'importance du durcissement des systèmes, de la gestion des accès et de la mise en place de plans de réponse aux incidents dans les entreprises.</p>
+    </div>
+    <a class="pl" href="https://www.lemondeinformatique.fr" target="_blank" rel="noreferrer">Voir la source →</a>
+  </div>
+
+  <!-- Article 2 -->
+  <div class="article-card" data-tag="windows">
+    <div class="article-meta">
+      <span class="article-date">16 septembre 2025</span>
+      <div class="article-tags">
+        <span class="tag">Obsolescence programmée</span>
+        <span class="tag">Windows 10</span>
+      </div>
+    </div>
+    <h3>L'obsolescence programmée de Windows 10 dénoncée</h3>
+    <p>Microsoft a annoncé la fin des mises à jour majeures de Windows 10 à partir de 2025, forçant les utilisateurs à migrer vers Windows 11 ou à acheter de nouveaux équipements compatibles. Des experts dénoncent une stratégie délibérée pour stimuler les ventes de matériel et de licences.</p>
+    <div class="article-impact">
+      <span class="impact-label">💡 Impact SISR</span>
+      <p>Les administrateurs systèmes doivent planifier la migration de parcs informatiques vers Windows 11, en évaluant la compatibilité matérielle et les coûts pour les entreprises.</p>
+    </div>
+    <a class="pl" href="https://www.lemondeinformatique.fr" target="_blank" rel="noreferrer">Voir la source →</a>
+  </div>
+
+  <!-- Article 3 -->
+  <div class="article-card" data-tag="ia">
+    <div class="article-meta">
+      <span class="article-date">1 octobre 2025</span>
+      <div class="article-tags">
+        <span class="tag">IA</span>
+        <span class="tag">Codage</span>
+      </div>
+    </div>
+    <h3>Les vrais gains de l'IA pour les codeurs ne sont pas atteints</h3>
+    <p>Malgré les promesses de GitHub Copilot et ChatGPT, les bénéfices concrets de l'IA pour les développeurs restent limités. Les outils génèrent des erreurs et nécessitent une supervision humaine constante. L'IA assiste mais ne remplace pas le développeur, qui garde un rôle central dans la validation et l'architecture.</p>
+    <div class="article-impact">
+      <span class="impact-label">💡 Impact SISR</span>
+      <p>L'IA peut aider à automatiser certaines tâches d'administration, mais l'expertise humaine reste indispensable pour garantir la sécurité et la fiabilité des systèmes.</p>
+    </div>
+    <a class="pl" href="https://www.lemondeinformatique.fr" target="_blank" rel="noreferrer">Voir la source →</a>
+  </div>
+
+  <!-- Article 4 -->
+  <div class="article-card" data-tag="ia">
+    <div class="article-meta">
+      <span class="article-date">22 septembre 2025</span>
+      <div class="article-tags">
+        <span class="tag">IA</span>
+        <span class="tag">Teams</span>
+      </div>
+    </div>
+    <h3>Microsoft dope la productivité de Teams avec des agents IA</h3>
+    <p>Microsoft intègre des agents IA dans Teams pour automatiser la gestion des réunions (ordre du jour, prise de notes, assignation de tâches) et dans SharePoint pour organiser les fichiers intelligemment. Ces agents communiquent entre eux via le protocole MCP, préfigurant une réinvention du travail collaboratif.</p>
+    <div class="article-impact">
+      <span class="impact-label">💡 Impact SISR</span>
+      <p>Les administrateurs systèmes devront maîtriser le déploiement et la sécurisation de ces agents IA au sein des infrastructures Microsoft 365 des entreprises.</p>
+    </div>
+    <a class="pl" href="https://www.lemondeinformatique.fr" target="_blank" rel="noreferrer">Voir la source →</a>
+  </div>
+
+  <!-- Article 5 -->
+  <div class="article-card" data-tag="ia">
+    <div class="article-meta">
+      <span class="article-date">1 octobre 2025</span>
+      <div class="article-tags">
+        <span class="tag">IA</span>
+        <span class="tag">Armée française</span>
+      </div>
+    </div>
+    <h3>L'Armée française greffe l'IA à son arsenal militaire</h3>
+    <p>Le général Laurent Boîté, DSI des Armées, a présenté au Dataiku Summit l'intégration de l'IA dans les équipements militaires français : drones, machine learning pour détecter les menaces, entraînement de pilotes virtuels. L'approche "zero trust" est adoptée pour la cybersécurité, centrée sur la protection des données.</p>
+    <div class="article-impact">
+      <span class="impact-label">💡 Impact SISR</span>
+      <p>L'approche "zero trust" défendue par l'armée devient un standard de sécurité à connaître pour tout administrateur réseau — principe de ne jamais faire confiance par défaut à un équipement ou utilisateur.</p>
+    </div>
+    <a class="pl" href="https://www.lemondeinformatique.fr" target="_blank" rel="noreferrer">Voir la source →</a>
+  </div>
+
+  <!-- Article 6 -->
+  <div class="article-card" data-tag="ia">
+    <div class="article-meta">
+      <span class="article-date">16 octobre 2025</span>
+      <div class="article-tags">
+        <span class="tag">IA</span>
+        <span class="tag">Applications</span>
+      </div>
+    </div>
+    <h3>Oracle accélère sur les agents IA pour les applications Fusion</h3>
+    <p>Lors de l'AI World à Las Vegas, Oracle a présenté ses agents IA intégrés à sa suite Fusion Cloud, accompagnés d'une marketplace pour des agents tiers. L'entreprise mise sur l'IA générative pour enrichir ses applications métiers, avec une centaine de fonctionnalités IA déjà déployées.</p>
+    <div class="article-impact">
+      <span class="impact-label">💡 Impact SISR</span>
+      <p>Les ERP d'entreprise intègrent désormais l'IA nativement — les techniciens SISR devront comprendre ces environnements cloud hybrides pour assurer leur maintenance et leur sécurité.</p>
+    </div>
+    <a class="pl" href="https://www.lemondeinformatique.fr" target="_blank" rel="noreferrer">Voir la source →</a>
+  </div>
+
+  <!-- Article 7 -->
+  <div class="article-card" data-tag="ia">
+    <div class="article-meta">
+      <span class="article-date">1 octobre 2025</span>
+      <div class="article-tags">
+        <span class="tag">IA</span>
+        <span class="tag">Armée française</span>
+        <span class="tag">Cybersécurité</span>
+      </div>
+    </div>
+    <h3>L'IA au cœur de la stratégie militaire française</h3>
+    <p>La France investit près de 2 milliards d'euros d'ici 2030 pour intégrer l'IA dans trois piliers militaires : le renseignement (analyse de données satellites), le combat (précision des frappes, drones collaboratifs) et l'organique (logistique, maintenance prédictive). L'AMIAD pilote cette transformation avec une doctrine stricte : le contrôle humain reste impératif.</p>
+    <div class="article-impact">
+      <span class="impact-label">💡 Impact SISR</span>
+      <p>La maintenance prédictive et la gestion de parc intelligente — domaines clés du SISR — s'inspirent directement des techniques développées dans ce contexte militaire et industriel.</p>
+    </div>
+    <a class="pl" href="https://www.lemondeinformatique.fr" target="_blank" rel="noreferrer">Voir la source →</a>
+  </div>
+
+</div>
+
+<!-- SYNTHÈSE -->
+<div class="impact-box" style="margin-top: 32px;">
+  <h3>💡 Synthèse — Impact sur mon métier</h3>
+  <p>Ces 7 articles montrent que l'IA transforme profondément tous les secteurs, y compris celui des infrastructures systèmes et réseaux. Pour un technicien SISR, les enjeux sont clairs : maîtriser la sécurité des nouveaux environnements IA (agents, cloud), anticiper les migrations de parcs (Windows 10 → 11), et adopter des approches modernes comme le "zero trust". La cybersécurité reste au centre de toutes les préoccupations, comme l'illustre la fuite de données Auchan.</p>
+</div>
+
+</div>
+
+<footer class="ft">
+  <p>© <span id="year"></span> Lucka ROLLIN — BTS SIO — option SISR &nbsp;·&nbsp; <a href="mailto:lucka.rollin@gmail.com">lucka.rollin@gmail.com</a></p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function filterArticles(tag, btn) {
+    document.querySelectorAll('.vfilter').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    document.querySelectorAll('.article-card').forEach(card => {
+      if (tag === 'all' || card.dataset.tag === tag) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  document.querySelectorAll('.hnav a').forEach(a => a.addEventListener('click', () => document.querySelector('.hnav').classList.remove('open')));
+</script>
+</body>
+</html>
