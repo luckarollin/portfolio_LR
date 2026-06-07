@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucka ROLLIN — Certifications</title>
+  <title>Lucka ROLLIN — Compétences</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -22,11 +22,11 @@
     </button>
     <nav class="hnav">
       <a href="../index.html">Accueil</a>
-      <a href="competences.html">Compétences</a>
+      <a href="competences.html" class="on">Compétences</a>
       <a href="experiences.html">Expériences</a>
       <a href="projets.html">Projets</a>
       <a href="veille.html">Veille</a>
-      <a href="certifications.html" class="on">Certifications</a>
+      <a href="certifications.html">Certifications</a>
       <a href="contact.html">Contact</a>
       <a href="stage_radiall.html">Stage</a>
     </nav>
@@ -36,57 +36,117 @@
 <div id="app">
 
 <div class="page-header">
-  <p class="breadcrumb"><a href="../index.html">Accueil</a> <span class="sep">/</span> Certifications</p>
-  <h1 class="page-title">Certifications</h1>
-  <p class="page-sub">Formations et certifications obtenues dans le cadre du BTS SIO.</p>
+  <p class="breadcrumb"><a href="../index.html">Accueil</a> <span class="sep">/</span> Compétences</p>
+  <h1 class="page-title">Compétences</h1>
 </div>
 
-<div class="cert-grid">
+<!-- TABLEAU DE SYNTHÈSE -->
+<h2 class="st">Tableau de synthèse des compétences</h2>
+<p class="section-intro">Référentiel officiel BTS SIO — seules les compétences maîtrisées sont listées.</p>
 
-  <!-- OpenClassrooms — Sécurisez votre réseau -->
-  <div class="cert-card">
-    <div class="cert-logo oc">OC</div>
-    <div class="cert-info">
-      <h3>Sécurisez votre réseau grâce aux VPN et Firewall</h3>
-      <p class="cert-platform">OpenClassrooms — Cybersécurité</p>
-      <p>Configuration et sécurisation de réseaux d'entreprise via des solutions VPN et pare-feu. Notions de filtrage, tunnels chiffrés et politiques de sécurité réseau.</p>
-      <span class="cert-status termine">✅ Terminé</span>
-    </div>
+<div class="table-wrap">
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>Compétence (référentiel BTS SIO)</th>
+        <th>Niveau</th>
+        <th>Preuve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gérer le patrimoine informatique (GLPI)</td>
+        <td><span class="niveau avance">Débutant</span></td>
+        <td>Futur utilisation en stage — tickets, inventaire</td>
+      </tr>
+      <tr>
+        <td>Administrer un serveur Windows (AD, DHCP)</td>
+        <td><span class="niveau intermediaire">Intermédiaire</span></td>
+        <td>Projet VirtualBox — rapport disponible</td>
+      </tr>
+      <tr>
+        <td>Administrer un réseau local (Cisco)</td>
+        <td><span class="niveau intermediaire">Intermédiaire</span></td>
+        <td>Projet Packet Tracer — captures d'écran</td>
+      </tr>
+      <tr>
+        <td>Virtualiser un environnement (VirtualBox)</td>
+        <td><span class="niveau avance">Avancé</span></td>
+        <td>Projet réseau virtuel Windows/Linux</td>
+      </tr>
+      <tr>
+        <td>Versionner et collaborer (Git / GitHub)</td>
+        <td><span class="niveau intermediaire">Intermédiaire</span></td>
+        <td>Portfolio BTS SIO — dépôt GitHub</td>
+      </tr>
+      <tr>
+        <td>Développer une interface web (HTML/CSS)</td>
+        <td><span class="niveau intermediaire">Intermédiaire</span></td>
+        <td>Ce portfolio — code source disponible</td>
+      </tr>
+      <tr>
+        <td>Programmer en C#</td>
+        <td><span class="niveau debutant">Débutant</span></td>
+        <td>Exercices de cours</td>
+      </tr>
+      <tr>
+        <td>Administrer un environnement Linux</td>
+        <td><span class="niveau debutant">Débutant</span></td>
+        <td>TP système — commandes de base</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- CARTES COMPÉTENCES -->
+<h2 class="st sec-gap">Compétences techniques</h2>
+<div class="skills-g">
+  <div class="sk" style="animation-delay:0s">
+    <h3>Gestion de parc</h3>
+    <p>Inventaire, déploiement, supervision et support utilisateurs via GLPI.</p>
   </div>
-
-  <!-- OpenClassrooms — Windows Server -->
-  <div class="cert-card">
-    <div class="cert-logo oc">OC</div>
-    <div class="cert-info">
-      <h3>Prenez en main Windows Server</h3>
-      <p class="cert-platform">OpenClassrooms — Systèmes &amp; Réseaux</p>
-      <p>Administration d'un serveur Windows Server : Active Directory, gestion des utilisateurs, DHCP, politiques de groupe (GPO) et supervision du parc.</p>
-      <span class="cert-status termine">✅ Terminé — janvier 2026</span>
-    </div>
+  <div class="sk" style="animation-delay:0.06s">
+    <h3>Windows Server</h3>
+    <p>Active Directory, DHCP, gestion d'utilisateurs et de domaines.</p>
   </div>
-
-  <!-- OpenClassrooms — Linux -->
-  <div class="cert-card">
-    <div class="cert-logo oc">OC</div>
-    <div class="cert-info">
-      <h3>Initiez-vous à Linux</h3>
-      <p class="cert-platform">OpenClassrooms — Systèmes &amp; Réseaux</p>
-      <p>Prise en main de l'environnement Linux : commandes de base, gestion des fichiers et permissions, navigation en ligne de commande et administration système.</p>
-      <span class="cert-status termine">✅ Terminé — novembre 2025</span>
-    </div>
+  <div class="sk" style="animation-delay:0.12s">
+    <h3>VirtualBox</h3>
+    <p>Création et gestion de machines virtuelles, réseaux virtuels.</p>
   </div>
-
-  <!-- MOOC ANSSI -->
-  <div class="cert-card">
-    <div class="cert-logo anssi">ANSSI</div>
-    <div class="cert-info">
-      <h3>MOOC de l'ANSSI</h3>
-      <p class="cert-platform">Agence Nationale de la Sécurité des Systèmes d'Information</p>
-      <p>Formation officielle aux fondamentaux de la cybersécurité : sensibilisation aux menaces, bonnes pratiques de sécurité, protection des systèmes d'information et cadre réglementaire français.</p>
-      <span class="cert-status termine">✅ Terminé</span>
-    </div>
+  <div class="sk" style="animation-delay:0.18s">
+    <h3>Git / GitHub</h3>
+    <p>Hébergement, versionnement, pull requests, collaboration.</p>
   </div>
+  <div class="sk" style="animation-delay:0.24s">
+    <h3>GLPI</h3>
+    <p>Ticketing, inventaire, base de connaissances, suivi d'interventions.</p>
+  </div>
+  <div class="sk" style="animation-delay:0.30s">
+    <h3>Cisco</h3>
+    <p>Configuration réseau, VLANs, routage de base (Packet Tracer).</p>
+  </div>
+  <div class="sk" style="animation-delay:0.36s">
+    <h3>C#</h3>
+    <p>Bases appliquées à de petits outils et automations.</p>
+  </div>
+  <div class="sk" style="animation-delay:0.42s">
+    <h3>HTML / CSS</h3>
+    <p>Intégration web responsive, mise en page moderne.</p>
+  </div>
+</div>
 
+<div class="soft-wrap">
+  <p class="soft-t">Qualités &amp; langues</p>
+  <ul class="pills">
+    <li>Autonomie</li>
+    <li>Curiosité</li>
+    <li>Rigueur</li>
+    <li>Esprit d'équipe</li>
+    <li>Qualité d'écoute</li>
+    <li>Capacité d'adaptation</li>
+    <li>Français (natif)</li>
+    <li>Anglais (B1)</li>
+  </ul>
 </div>
 
 </div>
@@ -100,4 +160,3 @@
 </script>
 </body>
 </html>
-
